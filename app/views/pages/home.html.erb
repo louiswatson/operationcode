@@ -1,9 +1,168 @@
-<!-- Landing section showing slides of what OC is about -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17bb3a8c71","applicationID":"14583188","transactionName":"cFheQxRdCFtdFEpEA1RSQxgOXQlS","queueTime":107,"applicationTime":321,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="description" content="Veteran-founded and led, Operation Code is a 501(c)(3) non-profit whose mission is to aid military, vets and their families learn coding and web technologies.">
+  <meta name="keywords" content="operation code, veterans, software development, learn to code, keep coding, veteran coders, senate veterans, house veterans, gi bill, new gi bill, operationcode.org, #operationcode, military vets, vets">
+  <meta name="author" content="Veteran Coders, for Veterans Coders">
+  <title>Operation Code | Open Source Veterans Non-Profit</title>
+
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"></link>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="assets/application-5e9772696695bd29d2321f2e6496398f.css" data-turbolinks-track="true" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kNGHlCjFgjnxx7lIhdCIgHOpKeG3RsTOITCqQyvNQVbApZBYdkkJzzYRr4PvdYEAZNKIgvfiUzL/+c1Kso024w==" />
+
+  <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+ga('create','UA-75642413-1','auto');
+ga('send','pageview');
+</script>
+
+  <meta name="google-site-verification" content="nBR2ER8Hcfls6RrkC05coE9yvBWUd3Ugi-helYsZcSs" />
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: {
+      families: ['Open Sans']
+    }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+
+  <script type="text/javascript" src="../js.stripe.com/v2/index.html"></script>
+  <script type="text/javascript"> Stripe.setPublishableKey('pk_live_bqebTTza5PGXJcAAaivllE03');</script>
+  <script src="../use.fontawesome.com/3c0f7e9be1.js"></script>
+  <script src="assets/application-392e6306c679dd2a1c1a626fb79810be.js" data-turbolinks-track="true"></script>
+  </head>
+  <body>
+    <ul id="about" class="dropdown-content">
+  <li><a href="history.html">History</a></li>
+  <li><a href="about.html">About Operation Code</a></li>
+  <li><a href="faq.html">Frequently Asked Questions</a></li>
+  <li><a href="press.html">Press Coverage</a></li>
+  <li><a href="newgibill.html">GI Bill Updates</a></li>
+  <li><a href="sponsors.html">Sponsors</a></li>
+  <li class="divider"></li>
+  <li><a href="staff.html">Staff</a></li>
+  <li><a href="board.html">Board of Directors</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="http://operationcode.github.io/tap-deck">TAP Briefing</a></li>
+</ul>
+
+<ul id="programs-and-services" class="dropdown-content">
+  <li><a href="code_schools.html">Code Schools</a></li>
+  <li><a href="scholarships.html">Scholarship Program</a></li>
+  <li><a href="mentorship.html">Software Mentorship</a></li>
+  <li><a href="employers.html">Employer Services</a></li>
+  <li><a href="deploy.html">Web Application Development</a></li>
+</ul>
+
+<ul id="Donate" class="dropdown-content">
+  <li><a href="../cash.me/%24operationcode.html">Square Cash</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="../www.dwolla.com/index.html">Dwolla</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="donations/new.html">Online</a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="../cottonbureau.com/products/operation-code-medal.html">Swag</a></li>
+  <li role="separator" class="divider"></li>
+   <li><a href="../smile.amazon.com/ap/signinfd03.html">AmazonSmile</a></li>
+</ul>
+
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a class="brand-logo" href="index.html"><img src="assets/operationcode_logo-eead949a7ce5220011ea8ddeb9ec5b0a.svg" alt="Operationcode logo" /></a>
+      <a class="button-collapse top-nav full hide-on-large-only" data-activates="nav-mobile" href="#"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li class='grey-text'><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="about">About<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="programs-and-services">What We Do<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-constrainwidth="false" data-beloworigin="true" data-activates="Donate">Donate<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><a href="success_stories.html">Success Stories</a></li>
+        <li><a target="_blank" href="https://medium.com/operation-code">Blog</a></li>
+          <li>
+            <a class="" href="veterans/sign_up.html">Join</a>
+          </li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav black-text">
+        <li><h6>About</h6></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About Operation Code</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+        <li><a href="press.html">Press Coverage</a></li>
+        <li><a href="newgibill.html">GI Bill Updates</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li class="divider"></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="board.html">Board of Directors</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="http://operationcode.github.io/tap-deck">TAP Briefing</a></li>
+        <li role="separator" class="divider"></li>
+
+        <li><h6>What We Do</h6></li>
+        <li><a href="mentorship.html">Software Mentorship</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="employers.html">Employer Services</a></li>
+        <li><a href="fellowships.html">Fellowship Program</a></li>
+        <li><a href="deploy.html">Deploy</a></li>
+        <li><a href="code_schools.html">Code Schools</a></li>
+        <li role="separator" class="divider"></li>
+
+       <li><h6>Donate</h6></li>
+        <li><a href="../cash.me/%24operationcode.html">SquareCash</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="../www.dwolla.com/index.html">Dwolla</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="donations/new.html">Online</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="../smile.amazon.com/ap/signinfd03.html">Amazon</a></li>
+        <li role="separator" class="divider"></li>
+
+
+        <li><a href="success_stories.html">Success Stories</a></li>
+        <li><a href="https://medium.com/operation-code">Blog</a></li>
+
+          <li>
+            <a class="btn btn-large" href="veterans/sign_up.html">Join</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+    <!-- Landing section showing slides of what OC is about -->
 <div class="section no-pad-top" id="index-banner">
   <div class="slider">
     <ul class="slides">
       <li class="valign-wrapper">
-        <%= image_tag 'gi-bill.jpg' %>
+        <img src="assets/gi-bill-946ee101d062a915a0a9b8ae938ec145.jpg" alt="Gi bill" />
         <div class="caption center-align valign">
           <h3>
             Welcome back. You served your country.<br />
@@ -12,7 +171,7 @@
         </div>
       </li>
       <li class="valign-wrapper">
-        <%= image_tag 'mentorship.jpg' %>
+        <img src="assets/mentorship-f01c4d53a1fd70124a55c3b611ce15a3.jpg" alt="Mentorship" />
         <div class="caption center-align valign">
           <h3>
             Those who've served shouldn't learn to code alone. Our software mentorship program in a
@@ -21,7 +180,7 @@
         </div>
       </li>
       <li class="valign-wrapper">
-        <%= image_tag 'scholarship.jpg' %>
+        <img src="assets/scholarship-6462a8512469c8ef4d86577b5c22c8ea.jpg" alt="Scholarship" />
         <div class="caption center-align valign">
           <h3>
             Expanding our country's technical talent shortage with our nation's finest who can code. Service to country continues.
@@ -38,7 +197,25 @@
   
   <div class="row">
     <div class="col m12">
-      <%= render partial: 'veterans/registrations/form' %>
+      <form class="new_veteran" id="new_veteran" action="https://operationcode.org/veterans" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RgW3b2UKkfD18T4MuMrAO9zNJDBuPGqjytd39mjbwhQWcaCjO4YaBjInKMfSb8m7y7aFUy6Y/V8UHhD/8Zu1oQ==" />
+  
+
+  <div class='row'>
+    <div class='col m12 offset-s1 offset-m2'>
+      <span class='input-field col m3'>
+        <input autofocus="autofocus" placeholder="email" type="email" name="veteran[email]" id="veteran_email" />
+      </span>
+
+      <span class='input-field col m2'>
+        <input placeholder="zip code" class="form-control" maxlength="5" size="5" type="text" name="veteran[zip]" id="veteran_zip" />
+      </span>
+
+      <span class="input-field col m1 s5">
+        <input type="submit" name="commit" value="Teach me to code!" class="btn btn-default" />
+      </span>
+    </div>
+  </div>
+</form>
     </div>
   </div>
 
@@ -103,7 +280,7 @@
       </h5>
     </div>
     <div class="row center">
-      <%= link_to 'Mission, Values, and the Team &raquo;'.html_safe, about_path, class: 'btn-large waves-effect waves-light opcode-green' %>
+      <a class="btn-large waves-effect waves-light opcode-green" href="about.html">Mission, Values, and the Team &raquo;</a>
     </div>
     <br><br>
   </div>
@@ -119,7 +296,7 @@
           Our peer-to-peer software mentorship program is uniquely designed to
           support you in your transition to tech and the world of software all
           remotely, all online. All branches, levels welcome.
-          <%= link_to 'How we mentor.', mentorship_path %>
+          <a href="mentorship.html">How we mentor.</a>
         </p>
       </div>
     </div>
@@ -132,7 +309,7 @@
         <p class="light">
           Through scholarships from participating code schools and industry software conferences,
           gain access and accelerate your transition to a career as a software developer.
-          <%= link_to 'Learn more.', scholarships_path %>
+          <a href="scholarships.html">Learn more.</a>
         </p>
       </div>
     </div>
@@ -146,7 +323,7 @@
           Beyond providing feedback on your resumé, we provide intros to software
           companies to get your foot in the door and pursue a career in a fast-paced
           and exciting industry that is growing by the day.
-          <%= link_to 'About our employer services.', employers_path %>
+          <a href="employers.html">About our employer services.</a>
         </p>
       </div>
     </div>
@@ -162,7 +339,7 @@
           Our in-house web development team employs military veterans to build
           websites and web applications while returning profits back into our
           nonprofit organization to build organizational capacity.
-          <%= link_to 'Meet the team.', deploy_path %>
+          <a href="deploy.html">Meet the team.</a>
         </p>
       </div>
     </div>
@@ -176,64 +353,216 @@
           In a world where the majority of code schools are not accredited by the
           VA, we'll defend veterans who might be taken advantage of while
           continuing to support code schools with state and VA accreditation.
-          <%= mail_to 'staff@operationcode.org', 'Get in touch.' %>
+          <a href="mailto:staff@operationcode.org">Get in touch.</a>
         </p>
       </div>
     </div>
   </div>
 
-  <hr />
+   <h3 class="header center">Success Stories</h3>
+
+<div class="container">
 
   <div class="row">
-    <br><br>
-    <h4 class="header center">Why Operation Code?</h4>
-    <div class="row center">
-      <h5 class="header col s12 light">
-        We're on a mission to enable new career paths for military, veterans 
-        and their families in software development and coding.
-      </h5>
+    <h5 class="center">We're proud to enable active military, guard & reserve troops, veterans and military families to become successful in the information age and 21st century new skills economy.</h5>
+  </div>
+  
+  <div class="row success-stories-item">
+
+    <div class="card valign-wrapper success-stories-card">
+
+      <div class="valign hide-on-small-only">
+        <a href="../twitter.com/JohnJHampton.24.delayed">
+          <img class="circle z-depth-3 success-stories-photo" src="../s3-us-west-2.amazonaws.com/operationcode/jhampton.jpg" alt="John Hampton" />
+        </a>
+      </div>
+
+      <div class="card-stacked">
+
+        <div class="card-content light">
+          <p>"It's been refreshing to see that other veterans share the same path as me - transitioning from military service to professional software development. By taking part in Operation Code's community, I've had the chance to pair-program with others, be introduced to new tech stacks that I was previously unfamiliar with, prepare for a software bootcamp, and find an internship through an opening posted in the <b><a href="../operation-code.slack.com/messages/jobs/index.html">#jobs</a></b> channel. <b>Operation Code fosters a community where members support each other, offer & accept advice, and serve as an ongoing reminder that we're all still part of one team."</b></p>
+        </div>
+
+        <div class="card-action left-align hide-on-small-only">
+          <div class="success-stories-name">- John Hampton, US Army veteran</div>
+          <div class="success-stories-accounts">
+            <a href="../github.com/jjhampton.26.delayed">GitHub</a>
+            <a href="https://twitter.com/JohnJHampton">Twitter</a>
+          </div>
+        </div>
+        <div class="card-action center hide-on-med-and-up">
+          <div class="success-stories-name">- John Hampton, US Army veteran</div>
+          <div>
+            <a href="https://github.com/jjhampton">GitHub</a>
+            <a href="https://twitter.com/JohnJHampton">Twitter</a>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="row center">
-      <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/124866675" width="700" height="481"
-          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
+
+  </div>
+
+  <div class="row success-stories-item">
+
+    <div class="card valign-wrapper success-stories-card">
+
+      <div class="card-stacked">
+
+        <div class="card-content light">
+          <p>"Prior to Operation Code, I was working day-in and day-out pouring concrete and general heavy labor construction when I learned about Operation Code. Due to their <b><a href="mentorship.html">mentorship</a></b> I skipped on finishing community college, borrowed a MacBook Pro from Operation Code, attended a Seattle code school, doubled my income, and improved my standard of living. <b>Thanks to Operation Code I'm doing what I love</b>."</p>
+        </div>
+
+        <div class="card-action right-align hide-on-small-only">
+          <div class="success-stories-name">- Victor Molina, US Marine Corps veteran</div>
+          <div class="success-stories-accounts">
+            <a href="../github.com/molina1775.html">GitHub</a>
+            <a href="../twitter.com/livestocode.html">Twitter</a>
+          </div>
+        </div>
+        <div class="card-action center hide-on-med-and-up">
+          <div class="success-stories-name">- Victor Molina, US Marine Corps veteran</div>
+          <a href="../github.com/molina1775.html">GitHub</a>
+          <a href="../twitter.com/livestocode.html">Twitter</a>
+        </div>
+
+      </div>
+
+      <div class="valign hide-on-small-only">
+        <a href="../twitter.com/livestocode.html">
+          <img class="circle z-depth-3 success-stories-photo" src="../s3-us-west-2.amazonaws.com/operationcode/victor_molina.jpg" alt="Victor Molina" />
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row success-stories-item">
+
+    <div class="card valign-wrapper success-stories-card">
+
+      <div class="valign hide-on-small-only">
+        <a href="../operation-code.slack.com/index47a0.html">
+          <img class="circle z-depth-3 success-stories-photo" src="../s3-us-west-2.amazonaws.com/operationcode/jameel_matin.png" alt="Jameel Matin" />
+        </a>
+      </div>
+
+      <div class="card-stacked">
+
+        <div class="card-content light">
+          <p>"I enlisted in the Marine Corps Infantry to serve and win our country's wars. After my service, I searched for a new career. I knew I wanted to be part of the tip of the spear in an industry and I realized the tech industry is leading from the front. <b>I Googled around and found Operation Code, a non-profit which helps veterans like me break into the tech industry. A couple weeks later they found a way to get me into GitHub's <a href="../codeconf.com/index.html">CodeConf LA</a></b>. There, I found <b><a href="../sabio.la/index.html">Sabio</a></b>, a local code school which accepts the New GI Bill. Today, I am in the middle of a <b><a href="../vetshack.us/index.html">hackathon</a></b> sponsored by Sabio in an effort to build a website to help folks in the military be successful by the time they get out. Operation Code not only paved a route for me, they also showed me what I can build with my imagination. <b>Imagine what it can do for other veterans</b>."</p>
+        </div>
+
+        <div class="card-action left-align hide-on-small-only">
+          <div class="success-stories-name">- Jameel Matin, US Marine Corps veteran</div>
+        </div>
+        <div class="card-action center hide-on-med-and-up">
+          <div class="success-stories-name">- Jameel Matin, US Marine Corps veteran</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row center">
+    <a class="btn btn-large btn-action" href="../operation-code.slack.com/indexa065.html" role="button">Submit Your Story &raquo;</a>
+
+    <a class="btn btn-large btn-action" href="../cash.me/%24operationcode.html" role="button">Donate now &raquo;</a>
+  </div>
+
+
+</div>
+  
+  
+
+
+    <footer class="page-footer grey lighten-5">
+  <div class="container">
+    <div class="row">
+      <div class="col m3">
+        <h5>Who Are We</h5>
+        <ul>
+          <li><a href="history.html">Our History</a></li>
+          <li><a href="about.html">About Operation Code</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+          <li><a href="https://medium.com/operation-code" target="_blank"></a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="board.html">Board of Directors</a></li>
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>What We Do</h2>
+        <ul>
+          <li><a href="mentorship.html">Software Mentorship</a></li>
+          <li><a href="scholarships.html">Scholarship Program</a></li>
+          <li><a href="employers.html">Employer Services</a></li>
+          <li><a href="deploy.html">Web Application Development</a></li>
+          <li><a href="mailto:schools@operationcode.org">Code School Technical Assistance</a>
+
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="donations/new.html">Donate</a></li>
+          <li><a href="../github.com/OperationCode/operationcode/blob/master/CONTRIBUTING.html">Open Source</a></li>
+          <li><a href="mailto:staff@operationcode.org">Software Mentorship</a>
+          <li><a href="mailto:staff@operationcode.org">Internships</a>
+          <li><a href="../smile.amazon.com/ap/signinfd03.html">Shop on AmazonSmile</a></li>
+        </ul>
+      </div>
+
+      <div class="col m3">
+        <h5>Press & Media</h5>
+        <ul>
+          <li><a href="press.html">Press Coverage</a></li>
+          <li><a href="newgibill.html">New GI Bill Updates</a></li>
+          <li><a href="mailto:staff@operationcode.org">Press Inquiries</a>
+          <li><a href="veterans/map.html">Veteran Map</a></li>
+          <li><a href="media.html">Download Media</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col m10 offset-m1 center-align">
+        <p><a href="https://www.guidestar.org/profile/47-4247572" target="_blank"><img src="https://widgets.guidestar.org/gximage2?o=9522101&amp;l=v3" /></a></p>
+        <p><em>Operation Code is a tax-exempt 501(c)(3) nonprofit organization. <a href="privacy.html">Donor Privacy Policy and Refund Policy</a></em>. </br>
+        <p>Proudly built with <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://materializecss.com/">Materialize</a>, and maintained by the <a href="../github.com/orgs/operationcode/people.html">core team</a> with the help of our <a href="../github.com/OperationCode/operationcode/graphs/contributors.html">contributors</a>.<p>This site is open source. <a href="../github.com/OperationCode/operationcode/blob/master/CONTRIBUTING.html">All pull requests welcome</a>.</p>
+        <div class="social-links">
+          <a href="../twitter.com/operation_code.html" id="twitter" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="https://facebook.com/operationcode.org" id="facebook" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="https://instagram.com/operation_code" id="instagram" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="https://www.snapchat.com/add/operationcode" id="snapchat" target="_blank"><i class="fa fa-snapchat-ghost fa-lg"></i></a>
+        </div>
       </div>
     </div>
   </div>
+</footer>
 
-  <hr />
 
-  <div class="row">
-    <h4 class="header center">Latest News</h4>
-    <div class="row center">
-      <h5 class="list-group-item-heading">
-        <a href="http://www.veteranonthemove.com/get-coding-now-with-operation-code-army-veteran-and-founder-david-molina/" target="_blank">"Get Coding Now with Operation Code."</a>
-      </h5>
-      <a href="http://www.veteranonthemove.com/get-coding-now-with-operation-code-army-veteran-and-founder-david-molina/" target="_blank">Joe Crane, Veteran on the Move podcast</a><br><br>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".dropdown-button").dropdown({beloworigin: true});
+        $(".slider").slider({height: 528, indicators: false});
+        $(".button-collapse").sideNav();
+        $('select').material_select();
+        // Hack until https://github.com/Dogfalo/materialize/pull/3379 is merged and on the CDN
+        $('ul.tabs a').on('click', function(e){
+          if($(this).attr("target") ) {
+            window.location = $(this).attr("href");
+          }
+        });
+      });
+    </script>
+  </body>
 
-      <h5 class="list-group-item-heading">
-        <a href="http://mentoringdevelopers.com/episode-36-how-to-pick-a-programming-language-to-learn-for-new-developers-part-2/" target="_blank">"How to pick a programming language to learn for new developers with Reuven Lerner, David Molina, and David Gatti."</a>
-      </h5>
-      <a href="http://mentoringdevelopers.com/episode-36-how-to-pick-a-programming-language-to-learn-for-new-developers-part-2/" target="_blank">Arsalan Ahmed, Mentoring Developers podcast</a><br><br>
-
-      <h5 class="list-group-item-heading">
-        <a href="http://softwareengineeringdaily.com/2016/03/20/helping-veterans-learn-code-david-molina/" target="_blank">"More and more veterans who leave the military are becoming coders, and the mission of Operation Code is to help military veterans make that transition."</a>
-      </h5>
-      <a href="http://softwareengineeringdaily.com/2016/03/20/helping-veterans-learn-code-david-molina/" target="_blank">Jeff Meyerson, Software Engineering Daily</a><br><br>
-      <h5 class="list-group-item-heading">
-        <a href="http://www.geekwire.com/2016/call-duty-technology-veterans-rally-support-operation-code/" target="_blank">"We as a community should try to hold each other up and push each other forward."</a>
-      </h5>
-      <a href="http://www.geekwire.com/2016/call-duty-technology-veterans-rally-support-operation-code/" target="_blank">Lisa Stiffler, GeekWire</a><br><br>
-      <h5 class="list-group-item-heading">
-        <a href="http://techcrunch.com/2015/11/11/few-options-for-veterans-looking-to-enter-tech/" target="_blank">“The Army’s Soldier for Life Program that is intended to help separating soldiers transition into new careers didn’t offer much career-specific guidance on the software developer field. Most information related to computers or technology was centered around network admin or network security,” Hampton said.</a>
-      </h5>
-      <a href="http://techcrunch.com/2015/11/11/few-options-for-veterans-looking-to-enter-tech/" target="_blank">Sara Inés Calderón, TechCrunch</a><br><br>
-      <h5 class="list-group-item-heading">
-        <a href="http://www.ibtimes.com/coding-boot-camps-go-after-veterans-take-silicon-valleys-vacant-tech-jobs-2174421" target="_blank">“Understanding how to code is understanding innovation. These are the white-collar jobs of today,” says David Molina, founder and executive director of Operation Code. “We’re talking about filling the country’s tech shortage with the men and women who served our country.”</a>
-      </h5>
-      <a href="http://www.ibtimes.com/coding-boot-camps-go-after-veterans-take-silicon-valleys-vacant-tech-jobs-2174421" target="_blank">Salvador Rodriguez, International Business Times</a><br><br>
-      <a class="btn-large waves-effect waves-light opcode-green" href="/square" role="button">Donate now &raquo;</a>
-    </div>
-  </div>
-</div>
+<!-- Mirrored from operationcode.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2016 15:48:29 GMT -->
+</html>
